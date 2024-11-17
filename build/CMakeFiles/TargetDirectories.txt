@@ -1,0 +1,3 @@
+/home/rhadov/projects/rpi_eyes/build/CMakeFiles/rpi_eyes.dir
+/home/rhadov/projects/rpi_eyes/build/CMakeFiles/edit_cache.dir
+/home/rhadov/projects/rpi_eyes/build/CMakeFiles/rebuild_cache.dir

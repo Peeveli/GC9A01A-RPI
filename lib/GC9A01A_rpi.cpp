@@ -48,8 +48,10 @@ void LCDDisplay::setBacklight(uint16_t blVal){
 
 void LCDDisplay::setAttributes(uint8_t scanDirection) {
   // Set scan direction and update width and height as needed
-  height = 240;
-  width = 240;
+  height = 220;
+  width = 220;
+  rotate = 0;
+  mirror = MIRROR_NONE;
   sendCommand(0x36); // Set memory access control (MX, MY, RGB mode)
   sendData8((scanDirection == HORIZONTAL) ? 0xC8 : 0x68);
 }
@@ -59,18 +61,17 @@ void LCDDisplay::setWindow(uint16_t xStart, uint16_t yStart, uint16_t xEnd, uint
   sendData8(0x00);
   sendData8(xStart);
   sendData8((xEnd-1)>>8);
-  sendData8(xEnd - 1);
+  sendData8(xEnd-1);
 
   sendCommand(0x2B);
   sendData8(0x00);
   sendData8(yStart);
   sendData8((yEnd-1)>>8);
-  sendData8(yEnd - 1);
+  sendData8(yEnd-1);
   sendCommand(0x2C);
 }
 
 void LCDDisplay::clear(uint16_t color) {
-
   uint16_t j;
   uint16_t image[width*height];
   color = ((color<<8)&0xff00)|(color>>8);
@@ -86,30 +87,19 @@ void LCDDisplay::clear(uint16_t color) {
   }
 }
 
-void LCDDisplay::displayImage(uint16_t *image){
+// Expects little-endian RGB565 bit array
+void LCDDisplay::displayImage(uint16_t *image, uint16_t w, uint16_t h){
   uint16_t j;
-  setWindow(0,0,width,height);
   gpioConfig.gpioPinWrite(gpioConfig.getDcPin(), 1);
-  for (j = 0; j < height; j++) {
-    writeByteN((uint8_t *)&image[j*width], width*2);
-  }
-}
-
-void LCDDisplay::displayImageWindows(uint16_t xStart, uint16_t yStart, uint16_t xEnd, uint16_t yEnd, uint16_t *Image) {
-  uint32_t addr = 0;
-  uint16_t j;
-  setWindow(xStart, yStart, xEnd , yEnd);
-  gpioConfig.gpioPinWrite(gpioConfig.getDcPin(), 1);
-  for (j = yStart; j < yEnd - 1; j++) {
-    addr = xStart + j * width ;
-    writeByteN((uint8_t *)&Image[addr], (xEnd-xStart)*2);
+  for (j = 0; j < h; j++) {
+    writeByteN((uint8_t *)&image[j*w], w*2);
   }
 }
 
 void LCDDisplay::displayPoint(uint16_t x, uint16_t y, u_int16_t color)
 {
-    setWindow(x,y,x,y);
-    sendData16(color);
+  setWindow(x,y,x,y);
+  sendData16(color);
 }
 
 void LCDDisplay::initRegisters() {
@@ -173,7 +163,6 @@ void LCDDisplay::initRegisters() {
 	sendCommand(0x3A);			
 	sendData8(0x05); 
 
-
 	sendCommand(0x90);			
 	sendData8(0x08);
 	sendData8(0x08);
@@ -227,7 +216,6 @@ void LCDDisplay::initRegisters() {
  	sendData8(0x37);  
  	sendData8(0x6F);
 
-
  	sendCommand(0xF2);   
  	sendData8(0x45);
  	sendData8(0x09);
@@ -253,7 +241,6 @@ void LCDDisplay::initRegisters() {
 	
 	sendCommand(0xCD);			
 	sendData8(0x63);		
-
 
 	sendCommand(0x70);			
 	sendData8(0x07);

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rhadov/projects/rpi_eyes
+CMAKE_SOURCE_DIR = /home/rhadov/projects/GC9A01A-RPI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rhadov/projects/rpi_eyes/build
+CMAKE_BINARY_DIR = /home/rhadov/projects/GC9A01A-RPI/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhadov/projects/rpi_eyes/build/CMakeFiles /home/rhadov/projects/rpi_eyes/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles /home/rhadov/projects/GC9A01A-RPI/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhadov/projects/rpi_eyes/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,53 +129,221 @@ rpi_eyes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/build
 .PHONY : rpi_eyes/fast
 
-lib/lcd/GC9A01A_rpi.o: lib/lcd/GC9A01A_rpi.cpp.o
-.PHONY : lib/lcd/GC9A01A_rpi.o
+lib/GC9A01A_rpi.o: lib/GC9A01A_rpi.cpp.o
+.PHONY : lib/GC9A01A_rpi.o
 
 # target to build an object file
-lib/lcd/GC9A01A_rpi.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o
-.PHONY : lib/lcd/GC9A01A_rpi.cpp.o
+lib/GC9A01A_rpi.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o
+.PHONY : lib/GC9A01A_rpi.cpp.o
 
-lib/lcd/GC9A01A_rpi.i: lib/lcd/GC9A01A_rpi.cpp.i
-.PHONY : lib/lcd/GC9A01A_rpi.i
+lib/GC9A01A_rpi.i: lib/GC9A01A_rpi.cpp.i
+.PHONY : lib/GC9A01A_rpi.i
 
 # target to preprocess a source file
-lib/lcd/GC9A01A_rpi.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.i
-.PHONY : lib/lcd/GC9A01A_rpi.cpp.i
+lib/GC9A01A_rpi.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.i
+.PHONY : lib/GC9A01A_rpi.cpp.i
 
-lib/lcd/GC9A01A_rpi.s: lib/lcd/GC9A01A_rpi.cpp.s
-.PHONY : lib/lcd/GC9A01A_rpi.s
+lib/GC9A01A_rpi.s: lib/GC9A01A_rpi.cpp.s
+.PHONY : lib/GC9A01A_rpi.s
 
 # target to generate assembly for a file
-lib/lcd/GC9A01A_rpi.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.s
-.PHONY : lib/lcd/GC9A01A_rpi.cpp.s
+lib/GC9A01A_rpi.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.s
+.PHONY : lib/GC9A01A_rpi.cpp.s
 
-lib/lcd/GPIOConfig.o: lib/lcd/GPIOConfig.cpp.o
-.PHONY : lib/lcd/GPIOConfig.o
+lib/GPIOConfig.o: lib/GPIOConfig.cpp.o
+.PHONY : lib/GPIOConfig.o
 
 # target to build an object file
-lib/lcd/GPIOConfig.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o
-.PHONY : lib/lcd/GPIOConfig.cpp.o
+lib/GPIOConfig.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o
+.PHONY : lib/GPIOConfig.cpp.o
 
-lib/lcd/GPIOConfig.i: lib/lcd/GPIOConfig.cpp.i
-.PHONY : lib/lcd/GPIOConfig.i
+lib/GPIOConfig.i: lib/GPIOConfig.cpp.i
+.PHONY : lib/GPIOConfig.i
 
 # target to preprocess a source file
-lib/lcd/GPIOConfig.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.i
-.PHONY : lib/lcd/GPIOConfig.cpp.i
+lib/GPIOConfig.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.i
+.PHONY : lib/GPIOConfig.cpp.i
 
-lib/lcd/GPIOConfig.s: lib/lcd/GPIOConfig.cpp.s
-.PHONY : lib/lcd/GPIOConfig.s
+lib/GPIOConfig.s: lib/GPIOConfig.cpp.s
+.PHONY : lib/GPIOConfig.s
 
 # target to generate assembly for a file
-lib/lcd/GPIOConfig.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.s
-.PHONY : lib/lcd/GPIOConfig.cpp.s
+lib/GPIOConfig.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.s
+.PHONY : lib/GPIOConfig.cpp.s
+
+lib/fonts/font12.o: lib/fonts/font12.c.o
+.PHONY : lib/fonts/font12.o
+
+# target to build an object file
+lib/fonts/font12.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o
+.PHONY : lib/fonts/font12.c.o
+
+lib/fonts/font12.i: lib/fonts/font12.c.i
+.PHONY : lib/fonts/font12.i
+
+# target to preprocess a source file
+lib/fonts/font12.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.i
+.PHONY : lib/fonts/font12.c.i
+
+lib/fonts/font12.s: lib/fonts/font12.c.s
+.PHONY : lib/fonts/font12.s
+
+# target to generate assembly for a file
+lib/fonts/font12.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.s
+.PHONY : lib/fonts/font12.c.s
+
+lib/fonts/font16.o: lib/fonts/font16.c.o
+.PHONY : lib/fonts/font16.o
+
+# target to build an object file
+lib/fonts/font16.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o
+.PHONY : lib/fonts/font16.c.o
+
+lib/fonts/font16.i: lib/fonts/font16.c.i
+.PHONY : lib/fonts/font16.i
+
+# target to preprocess a source file
+lib/fonts/font16.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.i
+.PHONY : lib/fonts/font16.c.i
+
+lib/fonts/font16.s: lib/fonts/font16.c.s
+.PHONY : lib/fonts/font16.s
+
+# target to generate assembly for a file
+lib/fonts/font16.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.s
+.PHONY : lib/fonts/font16.c.s
+
+lib/fonts/font20.o: lib/fonts/font20.c.o
+.PHONY : lib/fonts/font20.o
+
+# target to build an object file
+lib/fonts/font20.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o
+.PHONY : lib/fonts/font20.c.o
+
+lib/fonts/font20.i: lib/fonts/font20.c.i
+.PHONY : lib/fonts/font20.i
+
+# target to preprocess a source file
+lib/fonts/font20.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.i
+.PHONY : lib/fonts/font20.c.i
+
+lib/fonts/font20.s: lib/fonts/font20.c.s
+.PHONY : lib/fonts/font20.s
+
+# target to generate assembly for a file
+lib/fonts/font20.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.s
+.PHONY : lib/fonts/font20.c.s
+
+lib/fonts/font24.o: lib/fonts/font24.c.o
+.PHONY : lib/fonts/font24.o
+
+# target to build an object file
+lib/fonts/font24.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o
+.PHONY : lib/fonts/font24.c.o
+
+lib/fonts/font24.i: lib/fonts/font24.c.i
+.PHONY : lib/fonts/font24.i
+
+# target to preprocess a source file
+lib/fonts/font24.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.i
+.PHONY : lib/fonts/font24.c.i
+
+lib/fonts/font24.s: lib/fonts/font24.c.s
+.PHONY : lib/fonts/font24.s
+
+# target to generate assembly for a file
+lib/fonts/font24.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.s
+.PHONY : lib/fonts/font24.c.s
+
+lib/fonts/font48.o: lib/fonts/font48.c.o
+.PHONY : lib/fonts/font48.o
+
+# target to build an object file
+lib/fonts/font48.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o
+.PHONY : lib/fonts/font48.c.o
+
+lib/fonts/font48.i: lib/fonts/font48.c.i
+.PHONY : lib/fonts/font48.i
+
+# target to preprocess a source file
+lib/fonts/font48.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.i
+.PHONY : lib/fonts/font48.c.i
+
+lib/fonts/font48.s: lib/fonts/font48.c.s
+.PHONY : lib/fonts/font48.s
+
+# target to generate assembly for a file
+lib/fonts/font48.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.s
+.PHONY : lib/fonts/font48.c.s
+
+lib/fonts/font50.o: lib/fonts/font50.c.o
+.PHONY : lib/fonts/font50.o
+
+# target to build an object file
+lib/fonts/font50.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o
+.PHONY : lib/fonts/font50.c.o
+
+lib/fonts/font50.i: lib/fonts/font50.c.i
+.PHONY : lib/fonts/font50.i
+
+# target to preprocess a source file
+lib/fonts/font50.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.i
+.PHONY : lib/fonts/font50.c.i
+
+lib/fonts/font50.s: lib/fonts/font50.c.s
+.PHONY : lib/fonts/font50.s
+
+# target to generate assembly for a file
+lib/fonts/font50.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.s
+.PHONY : lib/fonts/font50.c.s
+
+lib/fonts/font8.o: lib/fonts/font8.c.o
+.PHONY : lib/fonts/font8.o
+
+# target to build an object file
+lib/fonts/font8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o
+.PHONY : lib/fonts/font8.c.o
+
+lib/fonts/font8.i: lib/fonts/font8.c.i
+.PHONY : lib/fonts/font8.i
+
+# target to preprocess a source file
+lib/fonts/font8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.i
+.PHONY : lib/fonts/font8.c.i
+
+lib/fonts/font8.s: lib/fonts/font8.c.s
+.PHONY : lib/fonts/font8.s
+
+# target to generate assembly for a file
+lib/fonts/font8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpi_eyes.dir/build.make CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.s
+.PHONY : lib/fonts/font8.c.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -210,12 +378,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rpi_eyes"
-	@echo "... lib/lcd/GC9A01A_rpi.o"
-	@echo "... lib/lcd/GC9A01A_rpi.i"
-	@echo "... lib/lcd/GC9A01A_rpi.s"
-	@echo "... lib/lcd/GPIOConfig.o"
-	@echo "... lib/lcd/GPIOConfig.i"
-	@echo "... lib/lcd/GPIOConfig.s"
+	@echo "... lib/GC9A01A_rpi.o"
+	@echo "... lib/GC9A01A_rpi.i"
+	@echo "... lib/GC9A01A_rpi.s"
+	@echo "... lib/GPIOConfig.o"
+	@echo "... lib/GPIOConfig.i"
+	@echo "... lib/GPIOConfig.s"
+	@echo "... lib/fonts/font12.o"
+	@echo "... lib/fonts/font12.i"
+	@echo "... lib/fonts/font12.s"
+	@echo "... lib/fonts/font16.o"
+	@echo "... lib/fonts/font16.i"
+	@echo "... lib/fonts/font16.s"
+	@echo "... lib/fonts/font20.o"
+	@echo "... lib/fonts/font20.i"
+	@echo "... lib/fonts/font20.s"
+	@echo "... lib/fonts/font24.o"
+	@echo "... lib/fonts/font24.i"
+	@echo "... lib/fonts/font24.s"
+	@echo "... lib/fonts/font48.o"
+	@echo "... lib/fonts/font48.i"
+	@echo "... lib/fonts/font48.s"
+	@echo "... lib/fonts/font50.o"
+	@echo "... lib/fonts/font50.i"
+	@echo "... lib/fonts/font50.s"
+	@echo "... lib/fonts/font8.o"
+	@echo "... lib/fonts/font8.i"
+	@echo "... lib/fonts/font8.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

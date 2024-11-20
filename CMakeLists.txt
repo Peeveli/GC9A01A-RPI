@@ -9,10 +9,10 @@ option(ENABLE_LIBGPIOD "Enable support for libgpiod" ON)
 option(ENABLE_WIRINGPI "Enable support for wiringPi" OFF)
 
 # Include all subdirectories in lib/ for headers
-include_directories(lib lib/config lib/gui lib/fonts lib/lcd)
+include_directories(lib lib/fonts)
 
 # Find all .c files in lib/ and subdirectories
-file(GLOB_RECURSE LIB_SOURCES "lib/lcd/*.c*")
+file(GLOB_RECURSE LIB_SOURCES "lib/*.c*")
 
 # Add main application source
 set(SRC "src/main.cpp")
@@ -32,8 +32,13 @@ if(ENABLE_LIBGPIOD)
         message(STATUS "    version: ${LIBGPIOD_VERSION}")
         message(STATUS "    libraries: ${LIBGPIOD_LINK_LIBRARIES}")
 
-        # Link libgpiod library
-        set(EXTRA_LIBS PkgConfig::LIBGPIOD)
+        pkg_check_modules(OpenCV REQUIRED IMPORTED_TARGET opencv4)
+        message(STATUS "opencv library found:")
+        message(STATUS "    version: ${OPENCV_VERSION}")
+        message(STATUS "    libraries: ${OpenCV_LINK_LIBRARIES}")
+
+        # Link libraries
+        set(EXTRA_LIBS PkgConfig::LIBGPIOD PkgConfig::OpenCV)
     else()
         message(FATAL_ERROR "PkgConfig not found, required for libgpiod support.")
     endif()

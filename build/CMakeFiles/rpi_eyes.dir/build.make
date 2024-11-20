@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rhadov/projects/rpi_eyes
+CMAKE_SOURCE_DIR = /home/rhadov/projects/GC9A01A-RPI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rhadov/projects/rpi_eyes/build
+CMAKE_BINARY_DIR = /home/rhadov/projects/GC9A01A-RPI/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rpi_eyes.dir/depend.make
@@ -70,63 +70,231 @@ include CMakeFiles/rpi_eyes.dir/progress.make
 include CMakeFiles/rpi_eyes.dir/flags.make
 
 CMakeFiles/rpi_eyes.dir/src/main.cpp.o: CMakeFiles/rpi_eyes.dir/flags.make
-CMakeFiles/rpi_eyes.dir/src/main.cpp.o: /home/rhadov/projects/rpi_eyes/src/main.cpp
+CMakeFiles/rpi_eyes.dir/src/main.cpp.o: /home/rhadov/projects/GC9A01A-RPI/src/main.cpp
 CMakeFiles/rpi_eyes.dir/src/main.cpp.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/rpi_eyes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rpi_eyes.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/src/main.cpp.o -MF CMakeFiles/rpi_eyes.dir/src/main.cpp.o.d -o CMakeFiles/rpi_eyes.dir/src/main.cpp.o -c /home/rhadov/projects/rpi_eyes/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rpi_eyes.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/src/main.cpp.o -MF CMakeFiles/rpi_eyes.dir/src/main.cpp.o.d -o CMakeFiles/rpi_eyes.dir/src/main.cpp.o -c /home/rhadov/projects/GC9A01A-RPI/src/main.cpp
 
 CMakeFiles/rpi_eyes.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rpi_eyes.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhadov/projects/rpi_eyes/src/main.cpp > CMakeFiles/rpi_eyes.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/src/main.cpp > CMakeFiles/rpi_eyes.dir/src/main.cpp.i
 
 CMakeFiles/rpi_eyes.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rpi_eyes.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhadov/projects/rpi_eyes/src/main.cpp -o CMakeFiles/rpi_eyes.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/src/main.cpp -o CMakeFiles/rpi_eyes.dir/src/main.cpp.s
 
-CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o: CMakeFiles/rpi_eyes.dir/flags.make
-CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o: /home/rhadov/projects/rpi_eyes/lib/lcd/GC9A01A_rpi.cpp
-CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/rpi_eyes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o -MF CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o.d -o CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o -c /home/rhadov/projects/rpi_eyes/lib/lcd/GC9A01A_rpi.cpp
+CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o: /home/rhadov/projects/GC9A01A-RPI/lib/GC9A01A_rpi.cpp
+CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o -MF CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o.d -o CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o -c /home/rhadov/projects/GC9A01A-RPI/lib/GC9A01A_rpi.cpp
 
-CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhadov/projects/rpi_eyes/lib/lcd/GC9A01A_rpi.cpp > CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.i
+CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/GC9A01A_rpi.cpp > CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.i
 
-CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhadov/projects/rpi_eyes/lib/lcd/GC9A01A_rpi.cpp -o CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.s
+CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/GC9A01A_rpi.cpp -o CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.s
 
-CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o: CMakeFiles/rpi_eyes.dir/flags.make
-CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o: /home/rhadov/projects/rpi_eyes/lib/lcd/GPIOConfig.cpp
-CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/rpi_eyes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o -MF CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o.d -o CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o -c /home/rhadov/projects/rpi_eyes/lib/lcd/GPIOConfig.cpp
+CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o: /home/rhadov/projects/GC9A01A-RPI/lib/GPIOConfig.cpp
+CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o -MF CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o.d -o CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o -c /home/rhadov/projects/GC9A01A-RPI/lib/GPIOConfig.cpp
 
-CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhadov/projects/rpi_eyes/lib/lcd/GPIOConfig.cpp > CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.i
+CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/GPIOConfig.cpp > CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.i
 
-CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhadov/projects/rpi_eyes/lib/lcd/GPIOConfig.cpp -o CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.s
+CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/GPIOConfig.cpp -o CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.s
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o: /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font12.c
+CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o -MF CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o.d -o CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o -c /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font12.c
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font12.c > CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.i
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font12.c -o CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.s
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o: /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font16.c
+CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o -MF CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o.d -o CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o -c /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font16.c
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font16.c > CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.i
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font16.c -o CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.s
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o: /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font20.c
+CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o -MF CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o.d -o CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o -c /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font20.c
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font20.c > CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.i
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font20.c -o CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.s
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o: /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font24.c
+CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o -MF CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o.d -o CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o -c /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font24.c
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font24.c > CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.i
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font24.c -o CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.s
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o: /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font48.c
+CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o -MF CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o.d -o CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o -c /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font48.c
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font48.c > CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.i
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font48.c -o CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.s
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o: /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font50.c
+CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o -MF CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o.d -o CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o -c /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font50.c
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font50.c > CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.i
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font50.c -o CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.s
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o: CMakeFiles/rpi_eyes.dir/flags.make
+CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o: /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font8.c
+CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o: CMakeFiles/rpi_eyes.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o -MF CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o.d -o CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o -c /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font8.c
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font8.c > CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.i
+
+CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/rhadov/projects/GC9A01A-RPI/lib/fonts/font8.c -o CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.s
 
 # Object files for target rpi_eyes
 rpi_eyes_OBJECTS = \
 "CMakeFiles/rpi_eyes.dir/src/main.cpp.o" \
-"CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o" \
-"CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o"
+"CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o" \
+"CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o" \
+"CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o" \
+"CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o" \
+"CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o" \
+"CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o" \
+"CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o" \
+"CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o" \
+"CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o"
 
 # External object files for target rpi_eyes
 rpi_eyes_EXTERNAL_OBJECTS =
 
 rpi_eyes: CMakeFiles/rpi_eyes.dir/src/main.cpp.o
-rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/lcd/GC9A01A_rpi.cpp.o
-rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/lcd/GPIOConfig.cpp.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/GC9A01A_rpi.cpp.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/GPIOConfig.cpp.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/fonts/font12.c.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/fonts/font16.c.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/fonts/font20.c.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/fonts/font24.c.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/fonts/font48.c.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/fonts/font50.c.o
+rpi_eyes: CMakeFiles/rpi_eyes.dir/lib/fonts/font8.c.o
 rpi_eyes: CMakeFiles/rpi_eyes.dir/build.make
 rpi_eyes: /usr/lib/aarch64-linux-gnu/libgpiod.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libgif.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_alphamat.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_aruco.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_barcode.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_bgsegm.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_bioinspired.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_ccalib.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_cvv.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_dnn_objdetect.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_dnn_superres.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_dpm.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_face.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_freetype.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_fuzzy.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_hdf.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_hfs.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_img_hash.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_intensity_transform.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_line_descriptor.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_mcc.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_quality.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_rapid.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_reg.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_rgbd.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_saliency.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_shape.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_stereo.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_structured_light.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_phase_unwrapping.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_superres.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_optflow.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_surface_matching.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_tracking.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_highgui.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_datasets.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_text.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_plot.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_ml.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_videostab.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_videoio.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_viz.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_wechat_qrcode.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_ximgproc.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_video.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_objdetect.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_calib3d.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_features2d.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_dnn.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_flann.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_xphoto.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_photo.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_imgproc.so
+rpi_eyes: /usr/lib/aarch64-linux-gnu/libopencv_core.so
 rpi_eyes: CMakeFiles/rpi_eyes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhadov/projects/rpi_eyes/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable rpi_eyes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable rpi_eyes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rpi_eyes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +306,6 @@ CMakeFiles/rpi_eyes.dir/clean:
 .PHONY : CMakeFiles/rpi_eyes.dir/clean
 
 CMakeFiles/rpi_eyes.dir/depend:
-	cd /home/rhadov/projects/rpi_eyes/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rhadov/projects/rpi_eyes /home/rhadov/projects/rpi_eyes /home/rhadov/projects/rpi_eyes/build /home/rhadov/projects/rpi_eyes/build /home/rhadov/projects/rpi_eyes/build/CMakeFiles/rpi_eyes.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rhadov/projects/GC9A01A-RPI/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rhadov/projects/GC9A01A-RPI /home/rhadov/projects/GC9A01A-RPI /home/rhadov/projects/GC9A01A-RPI/build /home/rhadov/projects/GC9A01A-RPI/build /home/rhadov/projects/GC9A01A-RPI/build/CMakeFiles/rpi_eyes.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rpi_eyes.dir/depend
 

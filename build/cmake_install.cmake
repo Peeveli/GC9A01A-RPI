@@ -1,4 +1,4 @@
-# Install script for directory: /home/rhadov/projects/rpi_eyes
+# Install script for directory: /home/rhadov/projects/GC9A01A-RPI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rhadov/projects/rpi_eyes/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rhadov/projects/GC9A01A-RPI/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

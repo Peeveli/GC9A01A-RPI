@@ -17,3 +17,4 @@ Usage:
 ````
 ./gc9a01a-rpi -s ../gifs/apex.gif
 ````
+![alt text](https://github.com/rhadov/GC9A01A-RPI/blob/main/gifs/demo.gif "demo")

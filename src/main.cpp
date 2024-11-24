@@ -26,7 +26,7 @@ std::vector<uint16_t> convertToRGB565(const cv::Mat& img) {
       uint8_t g = pixel[1] >> 2;  // Green, 6 bits
       uint8_t b = pixel[0] >> 3;  // Blue, 5 bits
       uint16_t color = (r << 11) | (g << 5) | b;
-      // Bit swap from big endian to little
+      // Bit swap from big to little endian
       rgb565[y * img.cols + x] = ((color<<8)&0xff00)|(color>>8);
     }
   }
@@ -38,7 +38,7 @@ bool processVideo(LCDDisplay display1, LCDDisplay display2, const char* vidPath,
   cv::VideoCapture cap(vidPath);
 
   if (!cap.isOpened()) {
-    std::cerr << "Failed to open GIF: " << vidPath << std::endl;
+    std::cerr << "Failed to open file: " << vidPath << std::endl;
     return -1;
   } else {
     display1.setWindow(x, y, width+x, height+y);
@@ -49,7 +49,7 @@ bool processVideo(LCDDisplay display1, LCDDisplay display2, const char* vidPath,
       while (cap.read(frame)) {
         // Resize to fit the screen
         cv::resize(frame, resizedFrame, cv::Size(width, height));
-        // Convert frame to RGB565
+        // Convert frame to RGB565, only total of 16 bits supported
         std::vector<uint16_t> rgb565Frame = convertToRGB565(resizedFrame);
         // Render the 565 converted vector data
         display1.displayImage(rgb565Frame.data(), width, height);

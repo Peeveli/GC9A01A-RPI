@@ -1,15 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
-project(rpi_eyes)
+project(gc9a01a-rpi)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 
 # Options to enable support for libgpiod or wiringPi
 option(ENABLE_LIBGPIOD "Enable support for libgpiod" ON)
-option(ENABLE_WIRINGPI "Enable support for wiringPi" OFF)
 
 # Include all subdirectories in lib/ for headers
-include_directories(lib lib/fonts)
+include_directories(lib)
 
 # Find all .c files in lib/ and subdirectories
 file(GLOB_RECURSE LIB_SOURCES "lib/*.c*")
@@ -42,25 +41,6 @@ if(ENABLE_LIBGPIOD)
     else()
         message(FATAL_ERROR "PkgConfig not found, required for libgpiod support.")
     endif()
-endif()
-
-# Conditional logic for wiringPi
-if(ENABLE_WIRINGPI)
-  # Enable compiler definition
-  add_compile_definitions(USE_WIRINGPI_LIB)
-
-  # Check for wiringPi library
-  find_library(WIRINGPI_LIB wiringPi)
-  if(WIRINGPI_LIB)
-    message(STATUS "wiringPi library found:")
-    message(STATUS "    version: ${WIRINGPI_VERSION}")
-    message(STATUS "    libraries: ${WIRINGPI_LINK_LIBRARIES}")
-
-    # Link wiringPi library
-    list(APPEND EXTRA_LIBS ${WIRINGPI_LIB})
-  else()
-    message(FATAL_ERROR "wiringPi library not found.")
-  endif()
 endif()
 
 # Add executable target

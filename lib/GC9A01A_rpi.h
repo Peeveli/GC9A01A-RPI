@@ -36,7 +36,6 @@
 class LCDDisplay {
 public:
   LCDDisplay(GPIOConfig& gpio) : gpioConfig(gpio) {}  // Constructor with pin assignments and SPI bus selection
-
   void initDisplay();                                 // Startup init
   void initRegisters();                               // Init registers per display
   void reset();

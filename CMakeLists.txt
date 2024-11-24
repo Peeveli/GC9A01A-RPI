@@ -14,7 +14,7 @@ include_directories(lib)
 file(GLOB_RECURSE LIB_SOURCES "lib/*.c*")
 
 # Add main application source
-set(SRC "src/main.cpp")
+set(SRC "examples/gif-example.cpp")
 set(CMAKE_BUILD_TYPE Debug)
 
 # Check if PkgConfig is available
